@@ -1,12 +1,7 @@
-#include "Tiket.h"
-
-Tiket::Tiket(const std::string& nama, int sessionId)
-    : namaPembeli(nama), sessionId(sessionId) {}
-
-std::string Tiket::getNama() const {
-    return namaPembeli;
-}
-
-int Tiket::getSessionId() const {
-    return sessionId;
-}
+struct Tiket {
+    int noAntrian;
+    std::string namaPembeli;
+    int sessionId;
+    std::string kodeKursi;
+    int harga;
+};
